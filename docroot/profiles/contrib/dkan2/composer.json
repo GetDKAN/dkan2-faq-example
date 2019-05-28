@@ -1,0 +1,63 @@
+{
+    "name": "getdkan/dkan2",
+    "type": "drupal-profile",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "description": "DKAN Open Data Catalog",
+    "require": {
+        "composer/installers": "^1.2",
+        "cweagans/composer-patches": "^1.5.0",
+        "oomphinc/composer-installers-extender": "^1.1",
+        "drupal/entity": "1.0.0-rc1",
+        "drupal/config_update": "1.x-dev",
+	    "fmizzell/json_form": "dev-8.x-1.x",
+        "bower-asset/json-forms": "1.6.3",
+        "fmizzell/sae" : "dev-master",
+        "fmizzell/datastore" : "dev-master",
+        "fmizzell/json-schema-provider": "dev-master",
+        "fmizzell/harvest": "dev-master",
+        "fmizzell/maquina": "dev-master",
+        "guzzlehttp/guzzle" : "6.3"
+    },
+    "require-dev": {
+      "burdamagazinorg/thunder-dev-tools": "dev-master",
+      "drupal/coder": "8.2",
+      "drupal/devel": "1.x-dev"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+	    {
+	        "type": "vcs",
+            "url": "https://github.com/fmizzell/json_form"
+	    }
+    ],
+    "scripts": {
+        "enable-asset-packagist": "Social\\Composer\\AssetPackagist::execute"
+    },
+    "autoload": {
+        "psr-4": {
+            "Social\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "acouch",
+            "email": "acinternets@gmail.com"
+        },
+        {
+          "name": "dafeder",
+          "email": "dafeder@gmail.com"
+        },
+	    {
+	      "name": "fmizzell",
+          "email": "fmizzell.dev@gmail.com"
+	    }
+    ]
+}

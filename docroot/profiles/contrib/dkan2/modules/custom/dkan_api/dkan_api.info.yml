@@ -1,0 +1,9 @@
+name: DKAN API
+description: 'DKAN API.'
+type: module
+core: 8.x
+dependencies:
+  - dkan_data
+  - basic_auth
+  - dkan_common
+package: DKAN

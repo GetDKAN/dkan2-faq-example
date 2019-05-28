@@ -1,0 +1,14 @@
+name: Data
+description: 'Provides a Data content type and related configuration. '
+type: module
+core: 8.x
+dependencies:
+  - dkan_schema
+  - field
+  - node
+  - json_form
+  - menu_ui
+  - path
+  - text
+  - user
+package: DKAN
